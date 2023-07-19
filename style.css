@@ -1,45 +1,47 @@
-/** Général **/
-a{
+@charset "UTF-8";
+/** Général * */
+a {
   color: black;
   text-decoration: none;
 }
 
-body{
+body {
   margin: 0%;
 }
 
-/** HEADER**/
-header{
+/** HEADER* */
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background: white;
-  height: auto;}
-
-  .header__logo{
-    max-width: 50%;
-    padding: 1%;
+  height: auto;
 }
 
-.header__localisation{
-  background-color:#EAEAEA;
-  width:100%;
+.header__logo {
+  max-width: 50%;
+  padding: 1%;
+}
+
+.header__localisation {
+  background-color: #EAEAEA;
+  width: 100%;
   padding: 4%;
-  filter: drop-shadow(3px 3px 15px rgba(0.5, 0.5, 0.5, 0));
+  filter: drop-shadow(3px 3px 15px rgba(1, 1, 1, 0));
   margin-bottom: 0%;
 }
 
-.header__titre{
-  background:#F6F6F6 ;
+.header__titre {
+  background: #F6F6F6;
   margin-top: 0%;
 }
 
-.header__fonctionnement{
+.header__fonctionnement {
   background: white;
 }
 
-.header__btn{
+.header__btn {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 20px;
   color: white;
@@ -47,14 +49,14 @@ header{
   margin-bottom: 3%;
 }
 
-.btn{
+.btn {
   border-radius: 20px;
   border: 0px;
-  box-shadow: 0px 4px 15px 0px #00000026;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   text-align: center;
 }
 
-.header__btn--grey{
+.header__btn--grey {
   background: #F6F6F6;
   display: flex;
   flex-direction: row;
@@ -62,8 +64,7 @@ header{
   margin-left: 2%;
   margin-right: 2%;
 }
-
-.header__btn--grey p{
+.header__btn--grey p {
   margin-right: 20%;
   border: 1px solid;
   border-radius: 50%;
@@ -72,8 +73,8 @@ header{
   color: white;
 }
 
-/** PARTIE CARTE SELECTION RESTURANT**/
-.restaurant{
+/** PARTIE CARTE SELECTION RESTURANT* */
+.restaurant {
   background: #F6F6F6;
   display: flex;
   flex-direction: column;
@@ -83,10 +84,10 @@ header{
   padding: 2%;
 }
 
-.restaurant__card{
+.restaurant__card {
   background-color: white;
   border-radius: 20px;
-  padding: 0.20em;
+  padding: 0.2em;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   display: flex;
   flex-direction: column;
@@ -95,19 +96,19 @@ header{
   padding: 1%;
 }
 
-.restaurant__card__img{
+.restaurant__card__img {
   max-height: 50%;
   max-width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
 
-.restaurant__card__txt{
+.restaurant__card__txt {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.restaurant i{
+.restaurant i {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
@@ -116,14 +117,13 @@ header{
   margin-left: 70%;
 }
 
-
-
 /**FOOTER**/
-footer{
+footer {
   background: #353535;
   color: white;
-  margin-top: 2%;}
-
-.footer__logo{
-  filter: invert(100);
+  margin-top: 2%;
 }
+
+.footer__logo {
+  filter: invert(100);
+}/*# sourceMappingURL=style.css.map */
