@@ -9,7 +9,7 @@ body {
   margin: 0%;
 }
 
-/** HEADER* */
+/** HEADER**/
 header {
   display: flex;
   flex-direction: column;
@@ -45,7 +45,8 @@ header {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 20px;
   color: white;
-  padding: 3%;
+  width: 70%;
+  height: 110%;
   margin-bottom: 3%;
 }
 
@@ -54,6 +55,7 @@ header {
   border: 0px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   text-align: center;
+  width: 90%;
 }
 
 .header__btn--grey {
@@ -61,7 +63,7 @@ header {
   display: flex;
   flex-direction: row;
   margin-bottom: 4%;
-  margin-left: 2%;
+  margin-left: 3%;
   margin-right: 2%;
 }
 .header__btn--grey p {
@@ -73,14 +75,12 @@ header {
   color: white;
 }
 
-/** PARTIE CARTE SELECTION RESTURANT* */
+/** PARTIE CARTE SELECTION RESTURANT**/
 .restaurant {
   background: #F6F6F6;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 35%;
-  max-width: 100%;
   padding: 2%;
 }
 
@@ -94,11 +94,14 @@ header {
   justify-content: flex-start;
   margin-top: 2%;
   padding: 1%;
+  width: 93%;
+  height: 10%;
 }
 
 .restaurant__card__img {
-  max-height: 50%;
-  max-width: 100%;
+  object-fit: cover;
+  height: 5%;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -117,7 +120,7 @@ header {
   margin-left: 70%;
 }
 
-/**FOOTER**/
+/**FOOTER**/ 
 footer {
   background: #353535;
   color: white;
