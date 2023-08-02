@@ -5,8 +5,6 @@ body{
 /**HEADER**/
 header{
     background: white;
-    max-height: 10%;
-    max-width: 100%;
 }
   
 .header__logo{
@@ -38,7 +36,7 @@ position:relative;
 
 .main__titre i{
     margin-left: 30%;
-    position:absolute;
+    position:absolute;  
 }
 
 main h2{

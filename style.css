@@ -18,6 +18,14 @@ header {
   background: white;
   height: auto;
 }
+header .header__btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 20px;
+  color: white;
+  width: 58%;
+  height: 4em;
+  margin-bottom: 10%;
+}
 
 .header__logo {
   max-width: 50%;
@@ -38,23 +46,15 @@ header {
 }
 
 .header__fonctionnement {
+  margin-top: 16%;
+  margin-bottom: 20%;
   background: white;
-}
-
-.header__btn {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  border-radius: 20px;
-  color: white;
-  width: 70%;
-  height: 110%;
-  margin-bottom: 3%;
 }
 
 .btn {
   border-radius: 20px;
   border: 0px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  text-align: center;
   width: 90%;
 }
 
@@ -62,17 +62,24 @@ header {
   background: #F6F6F6;
   display: flex;
   flex-direction: row;
-  margin-bottom: 4%;
+  margin-bottom: 7%;
   margin-left: 3%;
   margin-right: 2%;
+  height: 4.5em;
 }
 .header__btn--grey p {
-  margin-right: 20%;
+  text-align: center;
+  margin-right: 8%;
   border: 1px solid;
   border-radius: 50%;
-  padding: 3%;
+  padding: 2%;
   background-color: #9356DC;
   color: white;
+  height: 0.8em;
+  width: 0.8em;
+}
+.header__btn--grey h3 {
+  text-align: start;
 }
 
 /** PARTIE CARTE SELECTION RESTURANT**/
@@ -92,15 +99,16 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 2%;
+  margin-bottom: 4%;
   padding: 1%;
   width: 93%;
-  height: 10%;
+  height: 15em;
 }
 
 .restaurant__card__img {
-  object-fit: cover;
-  height: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 65%;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
@@ -109,6 +117,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+.restaurant__card__txt p {
+  margin: 0%;
 }
 
 .restaurant i {
@@ -124,9 +135,14 @@ header {
 footer {
   background: #353535;
   color: white;
-  margin-top: 2%;
+}
+footer h4 {
+  margin-left: 5%;
 }
 
 .footer__logo {
   filter: invert(100);
+  width: 8.5em;
+  height: 1.8em;
+  margin-left: 5%;
 }/*# sourceMappingURL=style.css.map */
