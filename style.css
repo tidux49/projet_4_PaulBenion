@@ -82,6 +82,10 @@ header .header__btn {
   text-align: start;
 }
 
+.header__btn:hover {
+  opacity: 0.5;
+}
+
 /** PARTIE CARTE SELECTION RESTURANT**/
 .restaurant {
   background: #F6F6F6;
@@ -103,6 +107,9 @@ header .header__btn {
   padding: 1%;
   width: 93%;
   height: 15em;
+}
+.restaurant__card .fa-heart:active {
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 
 .restaurant__card__img {
