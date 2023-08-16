@@ -40,6 +40,9 @@ header
   margin-top: 0%
 
 .header__fonctionnement
+  display : grid
+  grid-template-columns : 1fr
+  grid-template-row : 1fr 1fr 1fr
   margin-top: 16%
   margin-bottom: 20%
   background: white
@@ -81,9 +84,9 @@ header
 
 .restaurant
   background: #F6F6F6
-  display: flex
-  flex-direction: column
-  justify-content: space-between
+  display: grid
+  grid-template-columns : 1fr
+  grid-template-rows : 1fr 1fr 1fr 1fr
   padding: 2%
 
 .restaurant__card
@@ -99,9 +102,10 @@ header
   width:93%
   height:15em
   
-  .fa-heart:active
-    color : linear-gradient(#FF79DA, #9356DC)
-
+  .fa-heart
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
 
 
 .restaurant__card__img
@@ -141,3 +145,17 @@ footer
   width:8.5em
   height:1.8em
   margin-left:5%
+
+@media screen and (min-width: 1440px)
+
+  .restaurant
+    display:grid
+    grid-template-rows : 1fr 1fr
+    grid-template-columns : 1fr 1fr
+
+  .header__fonctionnement
+    display : grid
+    grid-template-columns : 1fr 1fr 1fr
+    grid-template-row : 1fr
+    margin-bottom : 1%
+    margin-top : 1%

@@ -46,7 +46,8 @@ main h2 {
   width: 15%;
 }
 
-.btn {
+.btn--animated {
+  position: relative;
   border-radius: 20px;
   border: 0px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -58,15 +59,39 @@ main h2 {
   padding-bottom: 0.1em;
   margin-bottom: 4%;
 }
+
+.btn {
+  position: absolute;
+}
 .btn h3 {
   text-align: start;
   margin-bottom: -0.6em;
   margin-top: 0.5em;
 }
 
+.btn__animation {
+  position: absolute;
+  height: 100em;
+  width: 200em;
+  background: #99E2D0;
+  border: solid 1px black;
+}
+
+.btn:hover {
+  transform: scaleX(0.8);
+  margin-left: -10%;
+}
+
 .btn__prix {
   font-weight: 800;
+  text-align: end;
 }
+
+.fa-circle-check {
+  color: green;
+  position: fixed;
+}
+
 .btn__commander {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
@@ -76,6 +101,10 @@ main h2 {
   width: 58%;
   height: 4em;
   margin-left: 25%;
+}
+
+.btn__commander:hover {
+  opacity: 0.5;
 }
 
 /**FOOTER* */
