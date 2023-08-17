@@ -20,6 +20,34 @@ header {
   max-width: 275.5%;
 }
 
+.heart__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -150%;
+  bottom: 0;
+}
+.heart__icon--empty {
+  position: absolute;
+  color: black;
+}
+.heart__icon--full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.heart__icon:hover .heart__icon--full {
+  opacity: 1;
+}
+.heart__icon:hover .heart__icon--empty {
+  opacity: 0;
+}
+
 /**MAIN**/
 main {
   background: #F6F6F6;
@@ -58,7 +86,7 @@ main h2 {
   z-index: 2;
   transition: transform 330ms ease-in-out;
   transform-origin: left 100%;
-  border-radius: 20px;
+  border-radius: 20px 20px 20px 20px;
   background-color: white;
   border: 0px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -71,6 +99,7 @@ main h2 {
   text-align: start;
   margin-bottom: -0.6em;
   margin-top: 0.5em;
+  transform-origin: left 100%;
 }
 
 .btn__animaton {
@@ -91,6 +120,9 @@ main h2 {
   broder-radius: 0px;
   transform: scaleX(0.8);
 }
+.btn--animated:hover .btn .h3 {
+  transform: scaleX(2);
+}
 
 .btn__prix {
   font-weight: 800;
@@ -98,9 +130,9 @@ main h2 {
 }
 
 .fa-circle-check {
-  color: green;
+  color: white;
   position: relative;
-  right: 0;
+  margin-right: -80%;
 }
 
 .btn__commander {

@@ -16,6 +16,35 @@ header
   max-height: 10%
   max-width: 275.5%
 
+.heart__icon
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right :-150%
+  bottom : 0
+
+  
+  &--empty
+    position: absolute
+    color: black
+    
+  &--full
+    position: absolute
+    opacity: 0
+    background: linear-gradient(#FF79DA, #9356DC)
+    background-clip: text
+    -webkit-background-clip: text
+    color: transparent
+    transition: all 400ms
+    
+  &:hover &--full
+    opacity: 1
+
+    
+  &:hover &--empty
+    opacity: 0
+
 
 /**MAIN**/
 
@@ -52,7 +81,7 @@ main h2
   z-index: 2
   transition: transform 330ms ease-in-out
   transform-origin: left 100%
-  border-radius: 20px
+  border-radius: 20px 20px 20px 20px
   background-color: white
   border: 0px
   box-shadow: 0px 4px 15px 0px #00000026
@@ -65,6 +94,7 @@ main h2
     text-align: start
     margin-bottom:-0.6em
     margin-top : 0.5em
+    transform-origin: left 100%
 
 .btn__animaton
     position : absolute
@@ -85,7 +115,9 @@ main h2
     .btn
         broder-radius: 0px
         transform : scaleX(0.8)
-        
+
+        .h3
+            transform : scaleX(2)        
 
 
 .btn__prix
@@ -93,9 +125,9 @@ main h2
     text-align: end
 
 .fa-circle-check
-    color : green
+    color : white
     position : relative
-    right : 0
+    margin-right : -80%
 
 .btn__commander
     background: linear-gradient(#FF79DA, #9356DC)
