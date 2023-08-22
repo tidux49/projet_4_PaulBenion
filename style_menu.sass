@@ -70,12 +70,42 @@ main h2
   border-bottom: 3px solid #99E2D0
   width: 15%
 
-.btn--animated
+.btn__menu
   position: relative
-  margin-bottom: 25%
+  margin-bottom: 10%
   display: flex
   flex-direction: column
-  
+
+  h3
+    z-index : 3
+    position : absolute
+    text-align: start
+    top : 0
+    margin-top : 1%
+    margin-left : 2%
+    text-overflow : ellipsis
+    white-space: nowrap
+    overflow : hidden 
+
+  p
+    z-index : 3
+    position : absolute
+    text-align: start
+    top : 0
+    margin-top : 10%
+    margin-left : 2%
+    text-overflow : ellipsis
+    white-space: nowrap
+    overflow : hidden    
+
+  .btn__prix
+    z-index : 4
+    top : 0
+    right : 0
+    margin-top : 10%
+    margin-right : 5%
+    transition: transform 330ms ease-in-out
+
 .btn
   position: absolute
   z-index: 2
@@ -90,13 +120,9 @@ main h2
   top : 0
   left : 0
 
-  h3
-    text-align: start
-    margin-bottom:-0.6em
-    margin-top : 0.5em
-    transform-origin: left 100%
 
-.btn__animaton
+
+.btn--vert
     position : absolute
     z-index: 1
     right: 0
@@ -111,13 +137,22 @@ main h2
 
 
 
-.btn--animated:hover    
+.btn__menu:hover    
     .btn
         broder-radius: 0px
-        transform : scaleX(0.8)
+        transform : scaleX(0.8)      
+    
+    .btn__prix
+        transform: translate(-19%)
 
-        .h3
-            transform : scaleX(2)        
+    btn__menu
+
+    p
+        width : 62%
+    
+    h3
+        width : 62%
+
 
 
 .btn__prix
