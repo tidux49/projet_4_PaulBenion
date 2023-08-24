@@ -1,6 +1,6 @@
 body {
-  width: -moz-min-content;
-  width: min-content;
+  width: 36.5%;
+  margin-left: 0%;
 }
 
 /**HEADER* */
@@ -12,7 +12,7 @@ header {
   max-width: 128%;
   height: 1.8%;
   padding: 1%;
-  margin-left: 25%;
+  margin-left: 70%;
 }
 
 .header__img {
@@ -21,12 +21,10 @@ header {
 }
 
 .heart__icon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -150%;
-  bottom: 0;
+  position: absolute;
+  margin-left: 76%;
+  margin-top: -6%;
+  font-size: 11px;
 }
 .heart__icon--empty {
   position: absolute;
@@ -51,9 +49,9 @@ header {
 /**MAIN**/
 main {
   background: #F6F6F6;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
   padding: 7%;
-  margin-top: -15%;
+  margin-top: -25%;
   position: relative;
   width: 262%;
 }
@@ -76,7 +74,8 @@ main h2 {
 
 .btn__menu {
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  height: 4em;
   display: flex;
   flex-direction: column;
 }
@@ -84,9 +83,8 @@ main h2 {
   z-index: 3;
   position: absolute;
   text-align: start;
-  top: 0;
-  margin-top: 1%;
-  margin-left: 2%;
+  top: -5%;
+  left: 2%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -95,19 +93,17 @@ main h2 {
   z-index: 3;
   position: absolute;
   text-align: start;
-  top: 0;
-  margin-top: 10%;
-  margin-left: 2%;
+  top: 30%;
+  left: 2%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .btn__menu .btn__prix {
   z-index: 4;
-  top: 0;
-  right: 0;
-  margin-top: 10%;
-  margin-right: 5%;
+  position: absolute;
+  top: 55%;
+  right: 5%;
   transition: transform 330ms ease-in-out;
 }
 
@@ -132,7 +128,7 @@ main h2 {
   right: 0;
   top: 0;
   margin-top: 0.3%;
-  height: 4.75em;
+  height: 4.7em;
   width: 100%;
   border: 0px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -145,7 +141,7 @@ main h2 {
   transform: scaleX(0.8);
 }
 .btn__menu:hover .btn__prix {
-  transform: translate(-19%);
+  transform: translateX(-300%);
 }
 .btn__menu:hover p {
   width: 62%;
@@ -195,4 +191,17 @@ footer h4 {
   width: 8.5em;
   height: 1.8em;
   margin-left: 5%;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 181%;
+    margin-left: 39%;
+  }
+  .main__titre {
+    margin-left: 40%;
+  }
+  .main__titre i {
+    left: 20%;
+  }
 }/*# sourceMappingURL=style_menu.css.map */
