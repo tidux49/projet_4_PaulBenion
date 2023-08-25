@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9a18055146.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +48,7 @@
                 <h3><i class="fa-solid fa-store"></i>  Dégustez au restaurant</h3>
             </div>
         </section>
-        <h2>Restaurants</h2>
+        <h2 class="restaurant__h2">Restaurants</h2>
         <section class="restaurant">
             
 
@@ -56,6 +62,7 @@
                         <i class="fa-solid fa-heart fa-2x heart__icon--full"></i>
                     </div>
                 </div>
+                <div class="card__nouveau">Nouveau</div>
             </a>
 
             <a class="restaurant__card" href="#">
@@ -68,6 +75,7 @@
                         <i class="fa-solid fa-heart fa-2x heart__icon--full"></i>
                     </div>
                 </div>
+                <div class="card__nouveau">Nouveau</div>
             </a>
 
             <a class="restaurant__card" href="#">
@@ -100,10 +108,12 @@
 
     <footer>
         <img class="footer__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
-        <h4><i class="fa-solid fa-utensils"></i> Proposer un restaurant</h4>
-        <h4><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</h4>
-        <h4>Mentions légales</h4>
-        <h4>Contact</h4>
+        <div class="footer__lien">
+            <h4><i class="fa-solid fa-utensils"></i> Proposer un restaurant</h4>
+            <h4><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</h4>
+            <h4>Mentions légales</h4>
+            <h4>Contact</h4>
+        </div>
     </footer>
 
 </body>

@@ -7,6 +7,7 @@ a {
 
 body {
   margin: 0%;
+  font-family: "Roboto", sans-serif;
 }
 
 /** HEADER**/
@@ -43,6 +44,20 @@ header .header__btn {
 .header__titre {
   background: #F6F6F6;
   margin-top: 0%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+main h2 {
+  margin-left: 2%;
+}
+
+.restaurant__h2 {
+  background: #F6F6F6;
+  padding: 2%;
+  padding-top: 10%;
+  margin-bottom: 0%;
+  margin-left: 0%;
 }
 
 .header__fonctionnement {
@@ -156,6 +171,15 @@ header .header__btn {
   margin: 0%;
 }
 
+.card__nouveau {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  padding: 2%;
+  background: #99E2D0;
+  color: #008766;
+}
+
 .heart__icon {
   grid-row-start: 1;
   grid-row-end: 2;
@@ -181,6 +205,16 @@ footer h4 {
   margin-left: 5%;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__lien {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 1440px) {
   .header__localisation {
     padding: 1.5%;
@@ -196,17 +230,41 @@ footer h4 {
   .restaurant {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    width: 72%;
+    margin-left: 10%;
   }
   .header__fonctionnement {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-row: 1fr;
     margin-bottom: 1%;
-    margin-top: 1%;
+    margin-top: 2%;
+    width: 78%;
+    margin-left: 10%;
+  }
+  main h2 {
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .restaurant__h2 {
+    background: #F6F6F6;
+    margin-bottom: 0%;
+    padding: 2%;
+    width: 72%;
+  }
+  .footer__lien {
+    display: flex;
+    flex-direction: row;
+    height: -moz-max-content;
+    height: max-content;
   }
   footer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+  }
+  .footer__logo {
+    margin-right: 5%;
   }
 }/*# sourceMappingURL=style.css.map */

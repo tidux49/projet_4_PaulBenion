@@ -1,6 +1,10 @@
 body
   width: 36.5%
   margin-left : 0%
+  font-family: 'Roboto', sans-serif
+
+h1
+    font-family: 'Shrikhand', cursive
 
 /**HEADER*
 
@@ -17,11 +21,20 @@ header
   max-height: 10%
   max-width: 275.5%
 
+.header__fleche
+    color : black
+    position : absolute
+    left : 7%
+    top : 2%
+    font-size : 30px
+
+
 .heart__icon
   position: absolute
   margin-left : 76%
   margin-top : -6%
   font-size : 11px
+    
   
   &--empty
     position: absolute
@@ -100,12 +113,12 @@ main h2
     position : absolute
     top : 55%
     right : 5%
-    transition: transform 330ms ease-in-out
+    transition: transform 330ms
 
 .btn
   position: absolute
   z-index: 2
-  transition: transform 330ms ease-in-out
+  transition: transform 330ms
   transform-origin: left 100%
   border-radius: 20px 20px 20px 20px
   background-color: white
@@ -131,15 +144,18 @@ main h2
     border-radius: 20px
     background-color: #99E2D0
 
+    i
+        font-size : 22px
 
 
-.btn__menu:hover    
+
+.btn__menu:hover
     .btn
         broder-radius: 0px
         transform : scaleX(0.8)      
     
     .btn__prix
-        transform: translateX(-300%)
+        transform: translateX(300%)
 
     btn__menu
 
@@ -168,7 +184,7 @@ main h2
     color: white
     width :58%
     height : 4em
-    margin-left:25%
+    margin-left:20%
 
 .btn__commander:hover
     opacity: 0.5
@@ -189,6 +205,7 @@ footer
   width:8.5em
   height:1.8em
   margin-left:5%
+  margin-top : 2%
 
 
 @media screen and (min-width: 1440px)
