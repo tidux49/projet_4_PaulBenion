@@ -8,6 +8,39 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+/** ANIMATION OUVERTURE PAGE* */
+.section__entrees, .section__plats, .section__desserts {
+  opacity: 0;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section__entrees {
+  animation-name: fondu;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.section__plats {
+  animation-name: fondu;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.section__desserts {
+  animation-name: fondu;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
 /**HEADER* */
 header {
   background: white;
@@ -17,7 +50,7 @@ header {
   max-width: 128%;
   height: 1.8%;
   padding: 1%;
-  margin-left: 70%;
+  margin-left: 80%;
 }
 
 .header__img {
@@ -29,14 +62,14 @@ header {
   color: black;
   position: absolute;
   left: 7%;
-  top: 2%;
+  top: 0.5%;
   font-size: 30px;
 }
 
 .heart__icon {
   position: absolute;
   margin-left: 76%;
-  margin-top: -6%;
+  margin-top: -7.5%;
   font-size: 11px;
 }
 .heart__icon--empty {
@@ -69,12 +102,17 @@ main {
   width: 262%;
 }
 
+.section__plats, .section__desserts {
+  margin-top: 12%;
+}
+
 .main__titre {
   display: flex;
   flex-direction: row;
+  margin-left: 6%;
 }
 .main__titre i {
-  margin-left: 30%;
+  right: 13%;
   position: absolute;
 }
 
@@ -157,13 +195,13 @@ main h2 {
   transform: scaleX(0.8);
 }
 .btn__menu:hover .btn__prix {
-  transform: translateX(300%);
+  transform: translateX(-340%);
 }
 .btn__menu:hover p {
-  width: 62%;
+  width: 57%;
 }
 .btn__menu:hover h3 {
-  width: 62%;
+  width: 57%;
 }
 
 .btn__prix {
@@ -186,6 +224,8 @@ main h2 {
   width: 58%;
   height: 4em;
   margin-left: 20%;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .btn__commander:hover {
@@ -197,6 +237,8 @@ footer {
   background: #353535;
   color: white;
   width: 275.5%;
+  display: flex;
+  flex-direction: column;
 }
 footer h4 {
   margin-left: 5%;
@@ -207,18 +249,75 @@ footer h4 {
   width: 8.5em;
   height: 1.8em;
   margin-left: 5%;
-  margin-top: 2%;
+  margin-top: 4%;
+}
+
+.footer__lien {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1440px) {
+  .header__img {
+    height: 24em;
+    width: 100em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header__fleche {
+    top: 2%;
+  }
+  .header__logo {
+    margin-left: 110%;
+  }
   main {
     width: 181%;
     margin-left: 39%;
+    margin-top: -10%;
   }
   .main__titre {
     margin-left: 40%;
   }
   .main__titre i {
     left: 20%;
+  }
+  .section__entrees, .section__plats, .section__desserts {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+  .heart__icon {
+    margin-left: 23%;
+    margin-top: -2.5%;
+  }
+  .btn__commander {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .footer__lien {
+    display: flex;
+    flex-direction: row;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    height: 7em;
+  }
+  footer h4 {
+    width: 15em;
+    padding: 0;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .footer__logo {
+    margin-right: 5%;
+    margin-top: 0%;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style_menu.css.map */

@@ -6,6 +6,36 @@ body
 h1
     font-family: 'Shrikhand', cursive
 
+/** ANIMATION OUVERTURE PAGE*
+
+.section__entrees, .section__plats, .section__desserts
+  opacity : 0
+
+@keyframes fondu
+  from
+    opacity : 0
+    
+  
+  to
+    opacity : 1
+
+.section__entrees
+  animation-name : fondu
+  animation-duration : 2s
+  animation-fill-mode : forwards
+
+.section__plats
+  animation-name : fondu
+  animation-duration : 2s
+  animation-delay : 1.5s
+  animation-fill-mode : forwards
+
+.section__desserts
+  animation-name : fondu
+  animation-duration : 2s
+  animation-delay : 3s
+  animation-fill-mode : forwards
+
 /**HEADER*
 
 header
@@ -15,7 +45,7 @@ header
   max-width: 128%
   height:1.8%
   padding: 1%
-  margin-left: 70%
+  margin-left: 80%
 
 .header__img
   max-height: 10%
@@ -25,17 +55,16 @@ header
     color : black
     position : absolute
     left : 7%
-    top : 2%
+    top : 0.5%
     font-size : 30px
 
 
 .heart__icon
   position: absolute
   margin-left : 76%
-  margin-top : -6%
+  margin-top : -7.5%
   font-size : 11px
-    
-  
+     
   &--empty
     position: absolute
     color: black
@@ -67,12 +96,16 @@ main
   position: relative
   width:262%
 
+.section__plats, .section__desserts
+  margin-top : 12%
+
 .main__titre
   display: flex
   flex-direction: row
+  margin-left  : 6%
 
   i
-    margin-left: 30%
+    right: 13%
     position: absolute
 
 main h2
@@ -150,44 +183,47 @@ main h2
 
 
 .btn__menu:hover
-    .btn
-        broder-radius: 0px
-        transform : scaleX(0.8)      
+  .btn
+    broder-radius: 0px
+    transform : scaleX(0.8)      
     
-    .btn__prix
-        transform: translateX(300%)
+  .btn__prix
+    transform: translateX(-340%)
 
-    btn__menu
+  btn__menu
 
-    p
-        width : 62%
+  p
+    width : 57%
     
-    h3
-        width : 62%
+  h3
+    width : 57%
 
 
 
 .btn__prix
-    font-weight: 800
-    text-align: end
+  font-weight: 800
+  text-align: end
 
 .fa-circle-check
-    color : white
-    position : relative
-    margin-right : -80%
+  color : white
+  position : relative
+  margin-right : -80%
 
 .btn__commander
-    background: linear-gradient(#FF79DA, #9356DC)
-    border-radius: 20px
-    border: 0px
-    box-shadow: 0px 4px 15px 0px #00000026
-    color: white
-    width :58%
-    height : 4em
-    margin-left:20%
+  background: linear-gradient(#FF79DA, #9356DC)
+  border-radius: 20px
+  border: 0px
+  box-shadow: 0px 4px 15px 0px #00000026
+  color: white
+  width :58%
+  height : 4em
+  margin-left:20%
+  margin-top : 6%
+  margin-bottom : 6%
 
 .btn__commander:hover
-    opacity: 0.5
+  opacity: 0.5
+
 
 /**FOOTER*
 
@@ -195,6 +231,8 @@ footer
   background: #353535
   color: white
   width:275.5%
+  display : flex
+  flex-direction : column
   
   
   h4
@@ -205,17 +243,71 @@ footer
   width:8.5em
   height:1.8em
   margin-left:5%
-  margin-top : 2%
+  margin-top : 4%
+
+.footer__lien
+  display : flex
+  flex-direction : column
 
 
 @media screen and (min-width: 1440px)
 
-    main
-        width : 181%
-        margin-left : 39%
+  .header__img
+    height : 24em
+    width : 100em
+    object-fit : cover
 
-    .main__titre
-        margin-left : 40%
+  .header__fleche
+    top : 2%
 
-        i
-            left : 20%
+  .header__logo
+    margin-left: 110%
+
+  main
+    width : 181%
+    margin-left : 39%
+    margin-top : -10%
+
+  .main__titre
+    margin-left : 40%
+
+    i
+      left : 20%
+  
+  .section__entrees, .section__plats, .section__desserts
+    width : 60%
+    margin-left : 20%
+    margin-top  : 2%
+  
+  .heart__icon
+    margin-left : 23%
+    margin-top : -2.5%
+
+  .btn__commander
+    width  : 20%
+    margin-left : 40%
+    margin-top : 2%
+    margin-bottom : 2%
+
+  .footer__lien
+    display : flex
+    flex-direction : row
+    height : max-content
+
+  footer
+    display : flex
+    flex-direction : row-reverse
+    justify-content : end
+    align-items : center
+    height : 7em
+    
+    h4
+      width : 15em
+      padding : 0
+      font-weight : 200
+      font-size : 12px
+  
+  .footer__logo
+    margin-right : 5%
+    margin-top  : 0%
+    font-size : 16px    
