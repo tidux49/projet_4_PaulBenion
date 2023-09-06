@@ -66,11 +66,21 @@ header {
   font-size: 30px;
 }
 
+/**MAIN**/
+main {
+  background: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  padding: 7%;
+  margin-top: -25%;
+  position: relative;
+  width: 262%;
+}
+
 .heart__icon {
   position: absolute;
-  margin-left: 76%;
-  margin-top: -7.5%;
   font-size: 11px;
+  right: 20%;
+  top: 3%;
 }
 .heart__icon--empty {
   position: absolute;
@@ -90,16 +100,6 @@ header {
 }
 .heart__icon:hover .heart__icon--empty {
   opacity: 0;
-}
-
-/**MAIN**/
-main {
-  background: #F6F6F6;
-  border-radius: 40px 40px 0px 0px;
-  padding: 7%;
-  margin-top: -25%;
-  position: relative;
-  width: 262%;
 }
 
 .section__plats, .section__desserts {
@@ -178,7 +178,6 @@ main h2 {
   z-index: 1;
   right: 0;
   top: 0;
-  margin-top: 0.3%;
   height: 4.7em;
   width: 100%;
   border: 0px;
@@ -195,7 +194,7 @@ main h2 {
   transform: scaleX(0.8);
 }
 .btn__menu:hover .btn__prix {
-  transform: translateX(-340%);
+  transform: translateX(-370%);
 }
 .btn__menu:hover p {
   width: 57%;
@@ -257,10 +256,40 @@ footer h4 {
   flex-direction: column;
 }
 
+@media screen and (min-width: 640px) {
+  .btn__menu:hover .btn {
+    broder-radius: 0px;
+    transform: scaleX(0.8);
+  }
+  .btn__menu:hover .btn__prix {
+    transform: translateX(-650%);
+  }
+  .btn__menu:hover btn__menu p {
+    width: 57%;
+  }
+  .btn__menu:hover btn__menu h3 {
+    width: 57%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .btn__menu:hover .btn {
+    broder-radius: 0px;
+    transform: scaleX(0.8);
+  }
+  .btn__menu:hover .btn__prix {
+    transform: translateX(-760%);
+  }
+  .btn__menu:hover btn__menu p {
+    width: 57%;
+  }
+  .btn__menu:hover btn__menu h3 {
+    width: 57%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .header__img {
     height: 24em;
-    width: 100em;
+    min-width: 300%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -281,14 +310,30 @@ footer h4 {
   .main__titre i {
     left: 20%;
   }
+  .heart__icon {
+    position: absolute;
+    font-size: 16px;
+    width: 100%;
+    right: -50%;
+    top: 5%;
+  }
   .section__entrees, .section__plats, .section__desserts {
     width: 60%;
     margin-left: 20%;
     margin-top: 2%;
   }
-  .heart__icon {
-    margin-left: 23%;
-    margin-top: -2.5%;
+  .btn__menu:hover .btn {
+    broder-radius: 0px;
+    transform: scaleX(0.8);
+  }
+  .btn__menu:hover .btn__prix {
+    transform: translateX(-500%);
+  }
+  .btn__menu:hover btn__menu p {
+    width: 57%;
+  }
+  .btn__menu:hover btn__menu h3 {
+    width: 57%;
   }
   .btn__commander {
     width: 20%;
@@ -319,5 +364,26 @@ footer h4 {
     margin-right: 5%;
     margin-top: 0%;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1890px) {
+  .btn__menu:hover .btn {
+    broder-radius: 0px;
+    transform: scaleX(0.8);
+  }
+  .btn__menu:hover .btn__prix {
+    transform: translateX(-700%);
+  }
+  .btn__menu:hover btn__menu p {
+    width: 57%;
+  }
+  .btn__menu:hover btn__menu h3 {
+    width: 57%;
+  }
+  .heart__icon {
+    position: absolute;
+    font-size: 16px;
+    right: -45%;
+    top: 5.5%;
   }
 }/*# sourceMappingURL=style_menu.css.map */

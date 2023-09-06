@@ -58,7 +58,7 @@ main
   display : grid
   grid-template-columns : 1fr
   grid-template-row : 1fr 1fr 1fr
-  margin-top: 16%
+  margin-top: 14%
   margin-bottom: 20%
   background: white
 
@@ -70,28 +70,25 @@ main
 
 .header__btn--grey
   background: #F6F6F6
-  display: flex
-  flex-direction: row
   margin-bottom: 7%
   margin-left: 3%
   margin-right: 2%
-  height: 4.5em
+  text-align : center
+  padding-top :  27px
+  padding-bottom : 27px
   
-
-  p
-    text-align: center
-    margin-right: 8%
-    margin-bottom : 3%
-    border: 1px solid
-    border-radius: 50%
-    padding: 3%
-    background-color: #9356DC
-    color: white
-    height:0.8em
-    width:0.8em
+.Fonctionnement--num
+  position : absolute
+  text-align: center
+  border: 1px solid
+  border-radius: 50%
+  padding : 6px
+  background-color: #9356DC
+  color: white
+  height:20px
+  width:20px
+  margin-top : 10%
   
-  h3
-    text-align: start
 
 .header__btn:hover
   opacity: 0.5   
@@ -199,6 +196,24 @@ footer
 .footer__lien
   display : flex
   flex-direction : column
+@media screen and (min-width: 500px)
+  .Fonctionnement--num
+    margin-top : 7%
+
+@media screen and (min-width: 650px)
+  .Fonctionnement--num
+    margin-top : 5%
+    padding : 10px
+
+@media screen and (min-width: 950px)
+  .Fonctionnement--num
+    margin-top : 3%
+    padding : 11px
+
+@media screen and (min-width: 950px)
+  .Fonctionnement--num
+    margin-top : 2.5%
+    padding : 11.5px
 
 @media screen and (min-width: 1440px)
 
@@ -234,6 +249,10 @@ footer
       margin-left : 10%
       margin-top : 2%
   
+  .Fonctionnement--num
+    padding :0.5%
+    margin-top : 2%
+  
   .restaurant__h2
     background : #F6F6F6
     margin-bottom : 0%
@@ -264,3 +283,6 @@ footer
     margin-right : 5%
     font-size : 12px    
 
+@media screen and (min-width: 2000px)
+  .Fonctionnement--num
+    margin-top : 1.5%
