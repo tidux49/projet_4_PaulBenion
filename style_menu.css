@@ -192,6 +192,7 @@ main h2 {
 .btn__menu:hover .btn {
   broder-radius: 0px;
   transform: scaleX(0.8);
+  border-radius: 20px 0px 0px 20px;
 }
 .btn__menu:hover .btn__prix {
   transform: translateX(-370%);
@@ -242,6 +243,12 @@ footer {
 footer h4 {
   margin-left: 5%;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 5%;
+}
 
 .footer__logo {
   filter: invert(100);
@@ -286,23 +293,29 @@ footer h4 {
     width: 57%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0%;
+    width: 100%;
+  }
   .header__img {
     height: 24em;
-    min-width: 300%;
+    min-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    margin: 0%;
   }
   .header__fleche {
     top: 2%;
   }
   .header__logo {
-    margin-left: 110%;
+    margin-left: 40%;
   }
   main {
-    width: 181%;
-    margin-left: 39%;
-    margin-top: -10%;
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 0%;
+    margin-top: -6%;
   }
   .main__titre {
     margin-left: 40%;
@@ -312,10 +325,10 @@ footer h4 {
   }
   .heart__icon {
     position: absolute;
-    font-size: 16px;
-    width: 100%;
-    right: -50%;
-    top: 5%;
+    font-size: 18px;
+    right: 10%;
+    top: 9%;
+    width: 25%;
   }
   .section__entrees, .section__plats, .section__desserts {
     width: 60%;
@@ -353,12 +366,20 @@ footer h4 {
     justify-content: end;
     align-items: center;
     height: 7em;
+    width: 100%;
   }
   footer h4 {
     width: 15em;
     padding: 0;
     font-weight: 200;
     font-size: 12px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 3%;
   }
   .footer__logo {
     margin-right: 5%;
