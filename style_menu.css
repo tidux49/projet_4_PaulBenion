@@ -402,9 +402,7 @@ footer a {
     width: 57%;
   }
   .heart__icon {
-    position: absolute;
-    font-size: 16px;
-    right: -45%;
-    top: 5.5%;
+    top: 10%;
+    right: 15%;
   }
 }/*# sourceMappingURL=style_menu.css.map */

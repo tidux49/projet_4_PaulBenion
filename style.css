@@ -45,7 +45,7 @@ body {
   }
   100% {
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes loader--logo {
@@ -55,7 +55,6 @@ body {
   to {
     filter: invert(0);
     transform: scale(1.5);
-    z-index: 0;
   }
 }
 /** HEADER**/
